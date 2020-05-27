@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generic HTML Title</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+
+    <script>
+        const palindromes = function(myString) {
+            //Replace all characters with blanks, and make it lower case
+            let newString = myString.replace(/[ .!#,?)(*&^%$#@!)]/g, "").toLowerCase();
+
+            let reversedString = [];
+
+            for (let i = 0; i < arrayedString.length; i++) {
+                reversedString.unshift(arrayedString[i]);
+            }
+
+            console.log(`Array: ${arrayedString}`);
+            console.log(`Reverse: ${reversedString}`);
+            
+            let finalForward = arrayedString.join("");
+            let finalBackward = reversedString.join("");
+
+            console.log(finalForward);
+            console.log(finalBackward);
+
+            //newString = newString.replace(/ /g, "");
+            if (finalForward == finalBackward) {
+                return true;
+            } else {
+                return false;
+            }
+
+        };
+
+    
+
+// will take in a string.
+// need to remove all punctuation from that string.  Not sure how to do that.  Not sure.  Google it.
+
+// here (above) I could, inefficiently, just check to see if it's a letter.  if not, remove it.  Boy that sounds tedious.
+
+// Then, take the new string, and reverse it.  Check for equality.
+// if equal, return true.
+// if not equal, return false.
+
+
+console.log(palindromes("Eat, SOME,, bag, ... !!! you haggard # ** g"));
+
+
+
+
+
+    </script>
+
+</body>
+</html>
